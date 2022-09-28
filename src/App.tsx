@@ -1,13 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
+import Home from './paginas/home/Home';
 import './App.css';
 
-let nome = "Gustavo"
 function App() {
   return (
-    <div className="App">
-    <h1>{nome}</h1>
-    </div>
+    <Home />
   );
 }
 
