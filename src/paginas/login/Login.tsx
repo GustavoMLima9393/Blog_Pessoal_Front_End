@@ -51,6 +51,7 @@ function Login() {
                 Não tem uma conta?
               </Typography>
             </Box>
+            <Link to="/cadastrousuario">
             <Typography
               variant="subtitle1"
               gutterBottom
@@ -59,6 +60,7 @@ function Login() {
             >
               Cadastre-se
             </Typography>
+            </Link>
           </Box>
         </Box>
       </Grid>
