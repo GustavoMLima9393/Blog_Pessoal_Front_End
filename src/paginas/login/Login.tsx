@@ -60,7 +60,7 @@ function Login() {
             <TextField
               value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
               id="usuario"
-              label="usuario"
+              label="Usuário(email)"
               variant="outlined"
               name="usuario"
               margin="normal"
@@ -69,7 +69,7 @@ function Login() {
             <TextField
               value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
               id="senha"
-              label="senha"
+              label="Senha"
               variant="outlined"
               name="senha"
               margin="normal"
