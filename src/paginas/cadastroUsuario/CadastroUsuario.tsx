@@ -58,7 +58,7 @@ function CadastroUsuario() {
     }
 
     return (
-        <Grid container direction="row" justifyContent="center" alignItems="center">
+        <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
             <Grid item xs={6} className="imagem2"></Grid>
             <Grid item xs={6} alignItems="center">
                 <Box paddingX={10}>
@@ -79,6 +79,7 @@ function CadastroUsuario() {
                             variant="outlined"
                             name="nome"
                             margin="normal"
+                            className="cor-interna"
                             fullWidth
                         />
                         <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
@@ -87,15 +88,17 @@ function CadastroUsuario() {
                             variant="outlined"
                             name="usuario"
                             margin="normal"
+                            className="cor-interna"
                             fullWidth
                         />
                         <TextField value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
                             id="senha"
-                            label="Senha"
+                            label="Senha" 
                             variant="outlined"
                             name="senha"
                             margin="normal"
                             type="password"
+                            className="cor-interna"
                             fullWidth
                         />
                         <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)}
@@ -105,6 +108,7 @@ function CadastroUsuario() {
                             name="confirmarSenha"
                             margin="normal"
                             type="password"
+                            className="cor-interna"
                             fullWidth
                         />
                         <Box marginTop={2} textAlign="center">

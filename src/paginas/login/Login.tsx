@@ -43,7 +43,7 @@ function Login() {
   }
 
   return (
-    <Grid container direction="row" justifyContent="center" alignItems="center">
+    <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
       <Grid alignItems="center" xs={6}>
         <Box paddingX={20}>
           <form onSubmit={onSubmit}>
@@ -64,6 +64,7 @@ function Login() {
               variant="outlined"
               name="usuario"
               margin="normal"
+              className="cor-interna"
               fullWidth
             />
             <TextField
@@ -74,6 +75,7 @@ function Login() {
               name="senha"
               margin="normal"
               type="password"
+              className="cor-interna"
               fullWidth
             />
             <Box marginTop={2} textAlign="center">
