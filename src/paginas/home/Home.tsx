@@ -19,8 +19,7 @@ function Home() {
                         <Button variant="outlined" className='botao'>Ver Postagens</Button>
                     </Box>
                 </Grid>
-                <Grid item xs={6} >
-                    <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
+                <Grid item xs={6} className="imagem1">
                 </Grid>
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />

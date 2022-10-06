@@ -16,3 +16,12 @@
 .postagens{
     background-color: white !important;
 }
+
+.imagem1{
+    background-image: url(https://cdn.dribbble.com/users/1410611/screenshots/14061653/media/543c04ffe859258051d5d6c5da951b56.jpg);
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
