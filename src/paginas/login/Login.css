@@ -14,3 +14,7 @@
 .text-decorator-none{
     text-decoration: none;
 }
+
+.cor-interna{
+    background-color: #ddd0ca !important;
+}
