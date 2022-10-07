@@ -79,7 +79,7 @@ function Login() {
               fullWidth
             />
             <Box marginTop={2} textAlign="center">
-              <Button type="submit" variant="contained" color="secondary">
+              <Button type="submit" variant="contained" color="primary">
                 Logar
               </Button>
             </Box>

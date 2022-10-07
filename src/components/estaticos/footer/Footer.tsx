@@ -25,12 +25,7 @@ function Footer() {
                     </Box>
                     <Box className='box2'>
                         <Box paddingTop={1}>
-                            <Typography variant="subtitle2" align="center" gutterBottom className="textos" >© 2022 Copyright:</Typography>
-                        </Box>
-                        <Box>
-                            <a target="_blank" href="https://brasil.generation.org">
-                                <Typography variant="subtitle2" gutterBottom className="textos" align="center">brasil.generation.org</Typography>
-                            </a>
+                            <Typography variant="subtitle2" align="center" gutterBottom className="textos" >© 2022 Copyright: Gustavo Macedo de Lima</Typography>
                         </Box>
                     </Box>
                 </Grid>

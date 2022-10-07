@@ -10,7 +10,7 @@ import { color } from "@mui/system";
 function Navbar() {
   return (
     <>
-      <AppBar position="static" style={{backgroundColor:'#940303'}}>
+      <AppBar position="static" style={{backgroundColor:'#0a0124'}}>
         <Toolbar variant="dense">
           <Box className="cursor">
             <Typography variant="h5" color="inherit">

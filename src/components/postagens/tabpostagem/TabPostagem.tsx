@@ -14,8 +14,8 @@ function TabPostagem() {
     return (
         <>
             <TabContext value={value}>
-                <AppBar position="static" style={{backgroundColor:'#940303'}}>
-                    <Tabs centered indicatorColor="secondary" onChange={handleChange}>
+                <AppBar position="static" style={{backgroundColor:'#0a0124'}}>
+                    <Tabs centered indicatorColor="primary" onChange={handleChange}>
                         <Tab label="Todas as postagens" value="1" />
                         <Tab label="Sobre mim" value="2" />
                     </Tabs>
