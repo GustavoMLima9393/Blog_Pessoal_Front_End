@@ -16,7 +16,7 @@ function Home() {
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                         </Box>
-                        <Button variant="outlined" className="botao cor-interna">Ver Postagens</Button>
+                        <Button type="submit" variant="contained" color="primary">Ver Postagens</Button>
                     </Box>
                 </Grid>
                 <Grid item xs={6} className="imagem1">
