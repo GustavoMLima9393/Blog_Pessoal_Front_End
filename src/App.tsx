@@ -6,8 +6,8 @@ import CadastroUsuario from "./paginas/cadastroUsuario/CadastroUsuario";
 import Home from "./paginas/home/Home";
 import Login from "./paginas/login/Login";
 import "./App.css";
-import ListaTema from "./components/temas/listatema/ListaTema";
-import ListaPostagem from "./components/postagens/listapostagem/ListaPostagem";
+import ListaTema from "./components/temas/listaTema/ListaTema";
+import ListaPostagem from "./components/postagens/listaPostagem/ListaPostagem";
 
 function App() {
   return (
