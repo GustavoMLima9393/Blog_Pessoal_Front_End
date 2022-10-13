@@ -14,7 +14,7 @@ function CadastroTema() {
   const { id } = useParams<{ id: string }>();
   const token = useSelector<TokenState, TokenState["tokens"]>(
     (state) => state.tokens
-);
+  );
   const [tema, setTema] = useState<Tema>({
     id: 0,
     descricao: "",
@@ -44,7 +44,7 @@ function CadastroTema() {
 
   async function findById(id: string) {
     buscaId(`/temas/${id}`, setTema, {
-      headers: {'Authorization': token},
+      headers: { 'Authorization': token },
     });
   }
 
@@ -62,7 +62,7 @@ function CadastroTema() {
     if (id !== undefined) {
       console.log(tema);
       put(`/temas`, tema, setTema, {
-        headers: {'Authorization': token},
+        headers: { 'Authorization': token },
       });
       toast.success("Tema atualizado com sucesso", {
         position: "top-right",
@@ -76,7 +76,7 @@ function CadastroTema() {
       });
     } else {
       post(`/temas`, tema, setTema, {
-        headers: {'Authorization': token},
+        headers: { 'Authorization': token },
       });
       toast.success("Tema cadastrado com sucesso", {
         position: "top-right",

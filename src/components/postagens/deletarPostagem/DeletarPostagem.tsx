@@ -28,7 +28,7 @@ function DeletarPostagem() {
                 draggable: false,
                 theme: "colored",
                 progress: undefined,
-              });
+            });
             navigate("/login")
 
         }
@@ -64,7 +64,7 @@ function DeletarPostagem() {
             draggable: false,
             theme: "colored",
             progress: undefined,
-          });
+        });
     }
 
     function nao() {

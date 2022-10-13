@@ -15,7 +15,7 @@ function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
   const token = useSelector<TokenState, TokenState["tokens"]>(
     (state) => state.tokens
-);
+  );
 
   useEffect(() => {
     if (token == "") {
