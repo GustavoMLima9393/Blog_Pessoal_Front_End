@@ -11,8 +11,8 @@ import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
 
 function ListaPostagem() {
-  const [posts, setPosts] = useState<Postagem[]>([])
   let navigate = useNavigate();
+  const [posts, setPosts] = useState<Postagem[]>([])
   const token = useSelector<TokenState, TokenState["tokens"]>(
     (state) => state.tokens
 );
