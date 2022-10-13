@@ -1,25 +1,25 @@
-import React, { useEffect, useState } from 'react'
+import React, { ChangeEvent, useEffect, useState } from 'react'
 import { Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
-import { Box } from '@mui/material';
+import Box from '@mui/material/Box';
 import './DeletarTema.css';
 import { useNavigate, useParams } from 'react-router-dom';
-import { buscaId, deleteId } from '../../../services/Service';
 import Tema from '../../../models/Tema';
-import { toast } from 'react-toastify';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+import { buscaId, deleteId } from '../../../services/Service';
 import { useSelector } from 'react-redux';
-
+import { TokenState } from '../../../store/tokens/tokensReducer';
+import { toast } from 'react-toastify';
 
 function DeletarTema() {
+
     let navigate = useNavigate();
     const { id } = useParams<{ id: string }>();
-    const [tema, setTema] = useState<Tema>();
+    const [tema, setTema] = useState<Tema>()
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
-      );
+    )
 
     useEffect(() => {
-        if (token == "") {
+        if (token == '') {
             toast.error("Você precisa estar logado", {
                 position: "top-right",
                 autoClose: 2000,
@@ -29,9 +29,8 @@ function DeletarTema() {
                 draggable: false,
                 theme: "colored",
                 progress: undefined,
-              });
+            });
             navigate("/login")
-
         }
     }, [token])
 
@@ -42,7 +41,7 @@ function DeletarTema() {
     }, [id])
 
     async function findById(id: string) {
-        buscaId(`/tema/${id}`, setTema, {
+        buscaId(`/temas/${id}`, setTema, {
             headers: {
                 'Authorization': token
             }
@@ -51,7 +50,7 @@ function DeletarTema() {
 
     function sim() {
         navigate('/temas')
-        deleteId(`/tema/${id}`, {
+        deleteId(`/temas/${id}`, {
             headers: {
                 'Authorization': token
             }
@@ -65,7 +64,7 @@ function DeletarTema() {
             draggable: false,
             theme: "colored",
             progress: undefined,
-          });
+        });
     }
 
     function nao() {
