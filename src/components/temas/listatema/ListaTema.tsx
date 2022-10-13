@@ -11,11 +11,11 @@ import { TokenState } from '../../../store/tokens/tokensReducer';
 import { useSelector } from 'react-redux';
 
 function ListaTema() {
+  let navigate = useNavigate();
   const [tema, setTemas] = useState<Tema[]>([])
   const token = useSelector<TokenState, TokenState["tokens"]>(
     (state) => state.tokens
 );
-  let navigate = useNavigate();
 
   useEffect(() => {
     if (token === '') {
