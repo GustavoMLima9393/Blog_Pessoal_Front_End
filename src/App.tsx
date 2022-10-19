@@ -6,7 +6,7 @@ import CadastroUsuario from "./paginas/cadastroUsuario/CadastroUsuario";
 import Home from "./paginas/home/Home";
 import Login from "./paginas/login/Login";
 import "./App.css";
-import ListaTema from "./components/temas/listaTema/ListaTema";
+import ListaTema from "./components/temas/listatema/ListaTema";
 import ListaPostagem from "./components/postagens/listaPostagem/ListaPostagem";
 import CadastroPost from "./components/postagens/cadastroPost/CadastroPost";
 import DeletarTema from "./components/temas/deletarTema/DeletarTema";
