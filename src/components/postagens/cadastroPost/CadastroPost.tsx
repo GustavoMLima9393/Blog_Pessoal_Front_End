@@ -5,6 +5,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import Postagem from '../../../models/Postagem';
 import Tema from '../../../models/Tema';
+import User from '../../../models/User';
 import { busca, buscaId, post, put } from '../../../services/Service';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 
@@ -25,7 +26,20 @@ function CadastroPost() {
     titulo: '',
     texto: '',
     tema: null,
+    usuario: null //linha adicionada para inserir o usuário dono na postagem
   });
+
+  const userId = useSelector<TokenState, TokenState["id"]>(
+    (state) => state.id
+  )
+
+  const [usuario, setUsuario] = useState<User>({
+    id: +userId,
+    nome: "",
+    usuario: "",
+    senha: "",
+    foto: ""
+  })
 
   useEffect(() => {
     if (token === '') {
@@ -47,6 +61,7 @@ function CadastroPost() {
     setPostagem({
       ...postagem,
       tema: tema,
+      usuario: usuario //adicionar o usuário dentro da postagem que está sendo enviada para o backend
     });
   }, [tema]);
 

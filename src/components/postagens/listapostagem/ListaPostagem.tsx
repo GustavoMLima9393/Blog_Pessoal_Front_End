@@ -57,6 +57,9 @@ function ListaPostagem() {
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>
                   Postagens
+                  <Typography variant="body2" component="p">
+                  Postado por: {post.usuario?.nome}
+                  </Typography>
                 </Typography>
                 <Typography variant="h5" component="h2">
                   {post.titulo}
