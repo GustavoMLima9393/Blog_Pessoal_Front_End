@@ -9,58 +9,58 @@ import './Perfil.css'
 
 function Perfil() {
 
-  const token = useSelector<TokenState, TokenState["tokens"]>(
-    (state) => state.tokens
-  )
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    )
 
-  const userId = useSelector<TokenState, TokenState['id']>(
-    (state) => state.id
-  )
+    const userId = useSelector<TokenState, TokenState['id']>(
+        (state) => state.id
+    )
 
-  const [usuario, setUsuario] = useState<User>({
-    id: +userId,
-    nome: '',
-    usuario: '',
-    foto: '',
-    senha: '',
-  })
-
-  async function getUserById(id: number) {
-    await buscaId(`/usuarios/${id}`, setUsuario, {
-      headers: {Authorization: token}
+    const [usuario, setUsuario] = useState<User>({
+        id: +userId,
+        nome: '',
+        usuario: '',
+        foto: '',
+        senha: '',
     })
-  }
 
-  useEffect(() => {
-    getUserById(+userId)
-  }, [])
+    async function getUserById(id: number) {
+        await buscaId(`/usuarios/${id}`, setUsuario, {
+            headers: { Authorization: token }
+        })
+    }
 
-  return (
-    <>
-      <Container>
-        <div className='perfilContainer'>
-          <Grid xs={3} alignItems='center' justifyContent='center' className='perfil'>
-            <img src={usuario.foto} alt="" className='imgPerfil' />
-            <Typography variant='h5' align='center' >{usuario.nome}</Typography>
-          </Grid>
-          <Grid xs={9} justifyContent='center' className='perfil'>
-            <Typography variant='h4' align='center'>Postagens de {usuario.nome}</Typography>
-            Você tem um total de {usuario.postagem?.length} postagens feitas
+    useEffect(() => {
+        getUserById(+userId)
+    }, [])
 
-            <div className="postUser">
-            {usuario.postagem?.map((post) => (
-              <div className="postPerfil">
-                <h3>{post.titulo}</h3>
-                <p>{post.texto}</p>
-                <strong>{post.tema?.descricao}</strong>
-              </div>
-            ))}
-            </div>
-          </Grid>
-        </div>
-      </Container>
-    </>
-  );
+    return (
+        <>
+            <Container>
+                <div className='perfilContainer'>
+                    <Grid xs={3} alignItems='center' justifyContent='center' className='perfil'>
+                        <img src={usuario.foto} alt="" className='imgPerfil' />
+                        <Typography variant='h5' align='center' >{usuario.nome}</Typography>
+                    </Grid>
+                    <Grid xs={9} justifyContent='center' className='perfil'>
+                        <Typography variant='h4' align='center'>Postagens de {usuario.nome}</Typography>
+                        Você tem um total de {usuario.postagem?.length} postagens feitas
+
+                        <div className="postUser">
+                            {usuario.postagem?.map((post) => (
+                                <div className="postPerfil">
+                                    <h3>{post.titulo}</h3>
+                                    <p>{post.texto}</p>
+                                    <strong>{post.tema?.descricao}</strong>
+                                </div>
+                            ))}
+                        </div>
+                    </Grid>
+                </div>
+            </Container>
+        </>
+    );
 }
 
 export default Perfil;
