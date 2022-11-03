@@ -8,6 +8,7 @@ import "./Login.css";
 import { useDispatch } from "react-redux";
 import { addId, addToken } from "../../store/tokens/actions";
 import { toast } from "react-toastify";
+import foto from "../img/fotologin.jpg"
 
 function Login() {
   let navigate = useNavigate();
@@ -159,9 +160,9 @@ function Login() {
         </Box>
       </Grid>
       <Grid
-        xs={6}
-        className='imagem'
-      ></Grid>
+        xs={6}>
+        <img className='imagem' src={foto}/>
+      </Grid>
     </Grid>
   );
 }
