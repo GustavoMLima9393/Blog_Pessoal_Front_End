@@ -18,3 +18,17 @@
     background-color: #dee0f3 !important;
 }
 
+.containerLogin{
+    background-color:  #bac0f0;
+    border-radius: 8px;
+    padding: 25px 0px;
+}
+
+.caixaLogin {
+    background-image: url(../img/fundologin.jpg);
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}

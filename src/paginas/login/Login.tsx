@@ -98,9 +98,9 @@ function Login() {
   }, [respUserLogin.token]);
 
   return (
-    <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa imagem'>
-      <Grid alignItems="center" xs={6}>
-        <Box paddingX={20} className="containerForm" >
+    <Grid container direction="row" justifyContent="center" alignItems="center" className='caixaLogin'>
+      <Grid alignItems="center" xs={6} className="containerLogin">
+        <Box paddingX={20}>
           <form onSubmit={onSubmit}>
             <Typography
               variant="h3"

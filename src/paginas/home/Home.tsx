@@ -9,6 +9,7 @@ import { useSelector } from 'react-redux';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
 
+
 function Home() {
 
     let navigate = useNavigate();
@@ -35,8 +36,8 @@ function Home() {
 
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
-                <Grid alignItems="center" item xs={6}>
+            <Grid container direction="row" justifyContent="center" alignItems="center" className='caixaHome'>
+                <Grid alignItems="center" xs={6} className="containerHome">
                     <Box paddingX={20} >
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Seja bem vindo(a)!</Typography>
                         <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Expresse aqui os seus pensamentos e opiniões!</Typography>
@@ -49,8 +50,6 @@ function Home() {
                             <Button type="submit" variant="contained" color="primary">Ver Postagens</Button>
                         </Link>
                     </Box>
-                </Grid>
-                <Grid item xs={6} className="imagem1">
                 </Grid>
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />
