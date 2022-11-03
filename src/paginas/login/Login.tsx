@@ -8,7 +8,6 @@ import "./Login.css";
 import { useDispatch } from "react-redux";
 import { addId, addToken } from "../../store/tokens/actions";
 import { toast } from "react-toastify";
-import foto from "../img/fotologin.jpg"
 
 function Login() {
   let navigate = useNavigate();
@@ -99,9 +98,9 @@ function Login() {
   }, [respUserLogin.token]);
 
   return (
-    <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
+    <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa imagem'>
       <Grid alignItems="center" xs={6}>
-        <Box paddingX={20}>
+        <Box paddingX={20} className="containerForm" >
           <form onSubmit={onSubmit}>
             <Typography
               variant="h3"
@@ -158,10 +157,6 @@ function Login() {
             </Link>
           </Box>
         </Box>
-      </Grid>
-      <Grid
-        xs={6}>
-        <img className='imagem' src={foto}/>
       </Grid>
     </Grid>
   );

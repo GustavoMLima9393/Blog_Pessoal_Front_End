@@ -1,5 +1,6 @@
 .caixa {
     background-color: #c1c1d3;
+    display: block;
 }
 
 .titulo {
