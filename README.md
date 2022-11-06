@@ -1,46 +1,83 @@
-# Getting Started with Create React App
+# BlogPessoalReact
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Criação de um projeto utlizando a biblioteca do ReactTS proposto pela [Generation Brasil](https://brazil.generation.org/) com o objetivo de construir uma SPA para o blog pessoal no módulo de front-end, fazendo consumo da API desenvolvida no módulo de back-end.
 
-## Available Scripts
+## Hard Skills:
+<img src="https://img.shields.io/badge/git-282C34?logo=git&logoColor=F05032" alt="git logo" title="git" height="25" /> <img src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" alt="React logo" title="React" height="25" />
+<img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" alt="TypeScript logo" title="TypeScript" height="25" />
+<img src="https://img.shields.io/badge/HTML5-282C34?logo=html5&logoColor=E34F26" alt="HTML5 logo" title="HTML5" height="25" />
+<img src="https://img.shields.io/badge/CSS3-282C34?logo=css3&logoColor=1572B6" alt="CSS3 logo" title="CSS3" height="25" />
+<img src="https://img.shields.io/badge/Material-UI-282C34?logo=material-ui&logoColor=1572B6" alt="Material-UI logo" title="Material-UI" height="25" />
 
-In the project directory, you can run:
 
-### `npm start`
+### Versão: React 17
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Link do projeto no ar: 
+https://gustablog.netlify.app/
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Tela de Cadastro
+![Captura de tela de 2022-11-06](https://raw.githubusercontent.com/gustavomlima9393/Blog_Pessoal_Front_End/master/src/paginas/img/TeladeCadastro.JPG)
 
-### `npm test`
+### Ponto de atenção:
+Conforme configurado no back-end, a regra de negócio do campo senha deve, obrigatoriamente, ser preenchido com 8 caracteres. Caso o usuário não siga esta disposição não conseguirá dar andamento ao cadastro, portanto, não será redirecionado para a tela de login. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tela de login
+![Captura de tela de 2022-11-06](https://raw.githubusercontent.com/gustavomlima9393/Blog_Pessoal_Front_End/master/src/paginas/img/TelaLogin.JPG)
+Ao passo que neste campo cabem as verificações do usuário cadastrado, a lógica do item anterior segue a mesma.
 
-### `npm run build`
+## Tela principal do blog
+![Captura de tela de 2022-11-06](https://raw.githubusercontent.com/gustavomlima9393/Blog_Pessoal_Front_End/master/src/paginas/img/TelaPrincipal.JPG)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ ## Tela de postagens expandida
+ ![Captura de tela de 2022-11-06(https://raw.githubusercontent.com/gustavomlima9393/Blog_Pessoal_Front_End/master/src/paginas/img/TelaPosts.JPG)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Comandos para a execução do projeto:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+****`cd nome-do-projeto`**** (entrar na pasta do arquivo) <br>
+****`code .`**** (abrir o editor de textos Visual Studio Code) <br>
+****`yarn`**** (baixar as dependências instaladas) <br>
+****`yarn start`**** (executar os scripts) <br>
 
-### `npm run eject`
+Obs: é preciso ter o Node instalado previamente, buscando manter a versão mais atualizada do software. <br>
+A outra opção de execução senão yarn é o ****`npm install`**** seguido do ****`npm start`****
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Estilização com Material-UI
+Combinação do CSS grid e dos parâmetros do flex box p/ compor a página web.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+CSS GRID -estilizar o layout de uma página, considerando linhas e colunas. <br>
+Flex box - elementos organizados dentro de containers.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Implementações:
+<ul>
+	<li>Componentização;</li>
+</ul>
+<ul>
+	<li>Router DOM;</li>
+</ul>
+<ul>
+	<li>Hooks;</li>
+</ul>
+<ul>
+	<li>Redux;</li>
+</ul>
+<ul>
+	<li>Axios;</li>
+</ul>
+<ul>
+	<li>CRUD;</li>
+</ul>
+<ul>
+	<li>Mui/material;</li>
+</ul>
+<ul>
+	<li>Toastify personalizado;</li>
+</ul>
+<ul>
+	<li>Consumo de API por meio da documentação do Swagger;</li>
+</ul>
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Status:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Em andamento.
