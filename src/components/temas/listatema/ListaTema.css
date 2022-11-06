@@ -3,7 +3,11 @@
 }
 
 .container-temas{
-    height: 100%;
-    padding: 100px 0px;
-    height: 100vh;
+    height: 15%;
+    padding: 10px 5px;
+    height: 15vh;
+}
+
+.fundoCadastro{
+    background-image: url(../../../paginas/img/fundologin.jpg);
 }

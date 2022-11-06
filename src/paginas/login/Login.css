@@ -2,6 +2,11 @@
     font-weight: bold !important;
 }
 
+.textos2{
+    font-family: 'B612 Mono', sans-serif !important;                                                                                           
+    color: rgb(10, 5, 5);
+}
+
 .imagem{
         background-repeat: no-repeat;
         width: 100vh;
@@ -19,7 +24,7 @@
 }
 
 .containerLogin{
-    background-color:  #a7ade4;
+    background-color:  #c6caeb;
     border-radius: 8px;
     padding: 25px 0px;
 }
