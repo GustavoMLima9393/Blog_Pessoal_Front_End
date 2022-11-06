@@ -43,7 +43,7 @@ function Home() {
                         <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Expresse aqui os seus pensamentos e opiniões!</Typography>
                     </Box>
                     <Box display="flex" justifyContent="center">
-                        <Box marginRight={1}>
+                        <Box marginRight={0}>
                             <ModalPostagem />
                         </Box>
                         <Link to="/posts" className="text-decorator-none">

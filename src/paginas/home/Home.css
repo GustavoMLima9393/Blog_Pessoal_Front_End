@@ -1,7 +1,7 @@
  @import url('https://fonts.cdnfonts.com/css/b612-mono');
 
 .caixaHome {
-    background-image: url(../img/fundohome.jpeg);
+    background-image: url(../img/fundohome.jpg);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;

@@ -27,7 +27,7 @@ function TabPostagem() {
                 </TabPanel>
                 <TabPanel value="2">
                     <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo">Sobre-mim</Typography>
-                    <Typography variant="body1" gutterBottom color="textPrimary" align="justify">Apenas um cara comum tentando ganhar a vida...</Typography>
+                    <Typography variant="body1" gutterBottom color="textPrimary" align="justify">Desenvolvedor Web Júnior formado pela Generation Brasil com muita garra e vontade de aprender! Esse projeto foi desenvolvido como task no bootcamp da Gen, mas utilizo ele para estudar React, Typescript e CSS.</Typography>
                 </TabPanel>
             </TabContext>
         </>

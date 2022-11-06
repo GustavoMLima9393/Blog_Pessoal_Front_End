@@ -93,7 +93,7 @@ function ListaPostagem() {
                     <Box display="flex" justifyContent="center" mb={1.5}>
 
                     <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
-                      <Box mx={1}>
+                      <Box mx={0}>
                         <Button variant="contained" className="marginLeft" size='small' color="primary" >
                           atualizar
                         </Button>
