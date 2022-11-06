@@ -29,7 +29,7 @@ Ao passo que neste campo cabem as verificações do usuário cadastrado, a lógi
 ![Captura de tela de 2022-11-06](https://raw.githubusercontent.com/gustavomlima9393/Blog_Pessoal_Front_End/master/src/paginas/img/TelaPrincipal.JPG)
 
  ## Tela de postagens expandida
- ![Captura de tela de 2022-11-06(https://raw.githubusercontent.com/gustavomlima9393/Blog_Pessoal_Front_End/master/src/paginas/img/TelaPosts.JPG)
+ ![Captura de tela de 2022-11-06](https://raw.githubusercontent.com/gustavomlima9393/Blog_Pessoal_Front_End/master/src/paginas/img/TelaPosts.JPG)
 
 ## Comandos para a execução do projeto:
 
