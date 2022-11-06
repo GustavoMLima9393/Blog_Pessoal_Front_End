@@ -84,4 +84,4 @@ Em andamento.
 
 ##
 
-Readme elaborado por Ana Santos, colega da Turma 57 da Generation Brasil - https://github.com/anabiax
+📌 Readme elaborado por [Ana Santos](https://github.com/anabiax), colega da Turma 57 da [Generation Brasil](https://brazil.generation.org/).
